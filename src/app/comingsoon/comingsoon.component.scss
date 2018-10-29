@@ -13,8 +13,7 @@
   background: linear-gradient(to bottom, #f77062, #fe5196);
 }
 
-a:focus,
-a:active,
+
 a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.502);
@@ -49,4 +48,9 @@ h1 {
       padding: 0 5px;
     }
   }
+}
+@media (orientation: landscape) {
+    h1{
+        padding: 75px 0 5px 0;
+    }
 }
