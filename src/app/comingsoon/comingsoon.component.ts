@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comingsoon.component.scss']
 })
 export class ComingsoonComponent implements OnInit {
+  maintext = ' is currently under construction';
+
 
   constructor() { }
 

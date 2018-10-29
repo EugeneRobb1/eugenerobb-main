@@ -1,18 +1,52 @@
-.main-content{
-    height: 100vh;
-    width: 100vw;
-    background:url('../../assets/imgs/coming-soon.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-    background-size: cover;
+@font-face {
+  font-family: Ubuntu;
+  src: url("../../assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
 
-    li{
-        display: inline;
-        list-style: none;
-    }
+.coming-soon {
+  font-family: Ubuntu, sans-serif;
+  height: 100vh;
+  background: #fb5f7e;
+  background: -webkit-linear-gradient(to bottom, #f77062, #fe5196);
+  background: -o-linear-gradient(to bottom, #f77062, #fe5196);
+  background: -moz-linear-gradient(to bottom, #f77062, #fe5196);
+  background: linear-gradient(to bottom, #f77062, #fe5196);
+}
 
-    .socials a{
-        padding: 10px;
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.502);
+}
+
+h1 {
+  font-size: 8vw;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.502);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 200px 0 10px 0;
+  margin: 0;
+}
+
+.socials {
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  h1 {
+    font-size: 5vw;
+    font-weight: bolder;
+  }
+  .socials {
+    li {
+      padding: 0 5px;
     }
+  }
 }
