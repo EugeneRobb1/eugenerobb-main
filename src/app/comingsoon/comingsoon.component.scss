@@ -1,56 +1,76 @@
-@font-face {
-  font-family: Ubuntu;
-  src: url("../../assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+.card {
+  margin: 100px auto;
+  width: 420px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.coming-soon {
-  font-family: Ubuntu, sans-serif;
-  height: 100vh;
-  background: #fb5f7e;
-  background: -webkit-linear-gradient(to bottom, #f77062, #fe5196);
-  background: -o-linear-gradient(to bottom, #f77062, #fe5196);
-  background: -moz-linear-gradient(to bottom, #f77062, #fe5196);
-  background: linear-gradient(to bottom, #f77062, #fe5196);
-}
-
-
-a:hover {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.502);
-}
-
-h1 {
-  font-size: 8vw;
-  line-height: 1.1;
-  color: rgba(255, 255, 255, 0.502);
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  padding: 200px 0 10px 0;
-  margin: 0;
-}
-
-.socials {
-  padding: 0;
-  margin: 0;
-  li {
-    display: inline;
-    padding: 15px;
+@media only screen and (max-width: 550px) {
+  .card {
+      width: 90%;
   }
 }
 
-@media (max-width: 410px) {
-  h1 {
-    font-size: 4vw;
-    font-weight: bolder;
-  }
-  .socials {
-    li {
-      padding: 0 5px;
-    }
-  }
-}
 @media (orientation: landscape) {
-    h1{
-        padding: 75px 0 5px 0;
-    }
+  .card {
+    margin: 30px auto;
+  }
+}
+
+.user-info {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.user-info-wrap {
+  margin-top: 20px;
+  display: flex;
+  padding: 0 20px;
+}
+.user-name {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+.user-title {
+  font-size: 16px;
+  font-weight: 200;
+  color: #8b8784;
+}
+.user-photo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #ffffff url("/assets/imgs/profile-me.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+.user-bio {
+  padding: 20px;
+}
+.user-bio p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons {
+  display: flex;
+}
+.social a {
+  display: block;
+  height: 20px;
+  color: #a9a9a8;
+  margin-right: 13px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.social a:hover {
+  color: #47a398;
+}
+.social .message a {
+  margin: 0;
 }
