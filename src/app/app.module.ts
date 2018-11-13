@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ComingsoonComponent } from './comingsoon/comingsoon.component';
+import { UserdataService } from './services/userdata.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,9 +18,10 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [UserdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
