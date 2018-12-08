@@ -10,7 +10,7 @@ export class UserdataService {
 
   // function to return user data
   getUser(): Observable<User> {
-    let githubUrl = 'https://api.github.com/users/EugeneRobb1'
+    let githubUrl = 'https://api.github.com/users/eugene-robb'
     return this.http.get<User>(githubUrl);
   }
 }
