@@ -8,14 +8,26 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-lg-8 offset-lg-2">
-        <article class="education-item" *ngFor="let education of myEducation">
+        <article class="education-item" *ngFor="let education of _myEducation">
           <fa-icon class="education-icon" [icon]="faGraduationCap"></fa-icon>
-          <h3 class="education-date">{{ education.yearStart }}</h3>
+          <h3 class="education-date">{{ education.yearEnd }}</h3>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"> {{ education.school }} </h5>
-              <h6 class="card-subtitle"> </h6>
-              <div class="card-text">{{ education.yearStart }} - {{ education.yearEnd }} {{ education.desc }}</div>
+              <h5 class="card-title"> <a *ngIf="education.courseLink; else courseTitle" href="{{education.courseLink}}"
+                  target="_blank" rel="noopener noreferrer">
+                  {{ education.program }}</a> </h5>
+
+              <ng-template #courseTitle>
+                <h5 class="card-title"> {{ education.program }} </h5>
+              </ng-template>
+
+              <h6 class="card-subtitle"> <a href="{{education.website}}" target="_blank">{{ education.name }}</a> </h6>
+              <p class="card-text text-muted">{{ education.yearStart }} - {{ education.yearEnd }}</p>
+              <p class="card-text">
+                {{ education.desc }}
+              </p>
+              <p *ngIf="education.level == 8" class="card-text">Final year project <a href="https://github.com/eugene-robb/VoiceCalculator" target="_blank" rel="noopener noreferrer">GitHub</a>
+                and <a href="https://www.youtube.com/watch?v=HAcUTGifTvA" target="_blank" rel="noopener noreferrer">demo</a>.</p>
             </div>
           </div>
         </article>

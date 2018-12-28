@@ -8,8 +8,10 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { UserdataService } from './services/userdata.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EducationComponent } from './education/education.component';
+import { HttpModule } from '@angular/http'
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EducationdataService } from './services/educationdata.service';
 
 
 @NgModule({
@@ -18,15 +20,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     FooterComponent,
     ComingsoonComponent,
-    EducationComponent
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     HttpClientModule,
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [UserdataService],
+  providers: [
+    UserdataService,
+    EducationdataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

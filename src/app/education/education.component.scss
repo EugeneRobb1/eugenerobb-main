@@ -28,6 +28,10 @@
     padding: 32px 24px 8px 40px;
     margin-left: 35px;
 
+    @media (min-width: 768px) {
+      margin-left: 110px;
+    }
+
     .education-icon {
       position: absolute;
       left: -1.3rem;
@@ -36,18 +40,14 @@
       font-size: 22px;
       background-color: #fff;
     }
-  }
-}
 
-
-@media (min-width: 768px) {
-  .education-item {
-    margin-left: 10rem;
-  }
-  .education-item .education-date {
-    position: absolute;
-    left: -10rem;
-    width: 7.5rem;
-    text-align: right;
+    @media (min-width: 768px) {
+      .education-date {
+        position: absolute;
+        left: -10rem;
+        width: 7.5rem;
+        text-align: right;
+      }
+    }
   }
 }

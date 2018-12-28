@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-
+import { EducationdataService } from '../services/educationdata.service'
 
 @Component({
   selector: 'app-education',
@@ -9,38 +9,36 @@ import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 })
 export class EducationComponent implements OnInit {
   faGraduationCap = faGraduationCap;
-  
-  myEducation = [
-    {
-      school: 'Scoil Colmcille',
-      type: 'Primary',
-      yearStart: 2018,
-      yearEnd: 2004,
-      desc: 'Primary school',
-      website: ''
-    },
-    {
-      school: 'Saint Eunans College',
-      type: 'Secondary',
-      yearStart: 2005,
-      yearEnd: 2011,
-      desc: 'Secondary school',
-      website: ''
-    },
-    {
-      school: 'Letterkenny Institute of Technology',
-      type: 'College',
-      yearStart: 2011,
-      yearEnd: 2015,
-      desc: 'College school boys',
-      website: ''
-    }
-  ]
 
+  _myEducation = [];
+  sortedByYearEducation = [];
 
-  constructor() { }
+  constructor(private _educationdataService: EducationdataService) { }
 
-  ngOnInit() {
+  getEducationData(): void {
+    this._educationdataService.getEducation()
+      .subscribe((resultArray) => {
+        this._myEducation = resultArray,
+          this.sortBy('yearEnd');
+        error => console.log("Error :: " + error)
+      })
   }
 
+  ngOnInit(): void {
+    this.getEducationData();
+  }
+
+
+  sortBy(input: string) {
+    this._myEducation.sort((a: any, b: any) => {
+      if (a[input] > b[input]) {
+        return -1;
+      } else if (a[input] > b[input]) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    this.sortedByYearEducation = this._myEducation;
+  }
 }
