@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../models/userdata.model';
-import { UserdataService } from '../services/userdata.service';
+import { User } from '../../models/userdata.model';
+import { UserdataService } from '../../services/userdata.service';
 
 @Component({
   selector: 'app-comingsoon',

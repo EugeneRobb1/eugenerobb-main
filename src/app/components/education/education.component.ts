@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { EducationdataService } from '../services/educationdata.service'
+import { EducationdataService } from '../../services/educationdata.service'
 
 @Component({
   selector: 'app-education',

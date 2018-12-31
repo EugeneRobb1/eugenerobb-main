@@ -12,11 +12,11 @@ export class EducationdataService {
   constructor(private http: Http) { }
 
   // Get Education from json
-  getEducation(): Observable<[]> {
+  getEducation(): Observable<any[]> {
     return this.http
       .get(this._educationLocation)
       .pipe(map((response: Response) => {
-        return <[]>response.json();
+        return <any[]>response.json();
       }), catchError(this.handleError));
   }
 
