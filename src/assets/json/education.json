@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Letterkenny Institute of Technology",
+        "type": "Postgraduate Course",
+        "level": 9,
+        "program": "Level 9 Certificate in DevOps",
+        "award": "CERTIFICATE in Development Operations (Special Purpose Award)",
+        "awardClassification": "",
+        "yearStart": 2017,
+        "yearEnd": 2018,
+        "grade": 85.33,
+        "desc": "DevOps is characterised by operations staff harnessing the same techniques as developers for their systems work. Topics covered on this course included: DevOps Software Engineering, Process Management, and Object Orientated Programming for Server Adminstration. This course also included a 12 week long industry placement.",
+        "courseLink": "https://www.lyit.ie/CourseDetails/D202/LY_KDVOP_M/DevOps",
+        "website": "https://www.lyit.ie"
+    },
+    {
+        "name": "Saint Eunans College",
+        "type": "Secondary Education",
+        "level": "",
+        "program": "Leaving Certificate",
+        "award": "Leaving Certificate",
+        "awardClassification": "",
+        "yearStart": 2005,
+        "yearEnd": 2011,
+        "grade": "Leaving Certificate",
+        "desc": "Secondary Education description",
+        "courseLink": "https://www.examinations.ie/?l=en&mc=ca&sc=sb",
+        "website": "https://sainteunans.com/"
+    },
+    {
+        "name": "Letterkenny Institute of Technology",
+        "type": "Undergraduate Course",
+        "level": 7,
+        "program": "BSc in Computing",
+        "award": "BACHELOR OF SCIENCE in Computing",
+        "awardClassification": "Merit 2",
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "grade": 55.75,
+        "desc": "This programme will provide students with the range of both theoretical and practical skills required for them to participate fully in the rapidly growing computing industry. The ethos of the course is to provide a strong core set of competencies in general computing. These skills are typically required across all companies working in IT.",
+        "courseLink": "https://www.lyit.ie/CourseDetails/D202/LY_KCMPU_D1/GeneralComputing",
+        "website": "https://www.lyit.ie"
+    },
+    {
+        "name": "Letterkenny Institute of Technology",
+        "type": "Undergraduate Course",
+        "level": 8,
+        "program": "BSc (Hons) in Computing",
+        "award": "BACHELOR OF SCIENCE (Honours) in Computing",
+        "awardClassification": "First Class Honours",
+        "yearStart": 2016,
+        "yearEnd": 2017,
+        "grade": 70.41,
+        "desc": "hons degree",
+        "courseLink": "",
+        "website": "https://www.lyit.ie"
+    }
+]
