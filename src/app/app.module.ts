@@ -9,9 +9,12 @@ import { UserdataService } from './services/userdata.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EducationComponent } from './components/education/education.component';
 import { HttpModule } from '@angular/http'
+import { NgwWowModule } from 'ngx-wow';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EducationdataService } from './services/educationdata.service';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -21,13 +24,16 @@ import { EducationdataService } from './services/educationdata.service';
     FooterComponent,
     ComingsoonComponent,
     EducationComponent,
+    SkillsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgwWowModule
   ],
   providers: [
     UserdataService,

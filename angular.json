@@ -28,10 +28,12 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/animate.css/animate.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
+              "node_modules/wowjs/dist/wow.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
