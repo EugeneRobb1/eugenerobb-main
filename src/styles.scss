@@ -1,4 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
-.icon{
-    font-size: 22px;
+html,
+body {
+  height: 100%;
+  .divider {
+    margin: 25px 0;
+    padding: 45px 0;
+    background-color: #f4f5f7;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+    &-heading {
+      text-transform: uppercase;
+      &:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        padding-top: 8px;
+        border-bottom: 4px solid black;
+      }
+    }
+
+    fa-icon {
+      font-size: 22px;
+    }
+
+    &:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      border-top-color: #f4f5f7;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+  }
 }

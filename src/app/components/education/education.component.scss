@@ -1,27 +1,4 @@
 .education {
-  .education-top {
-    padding: 35px 0;
-    background-color: #f4f5f7;
-    position: relative;
-
-    h2 {
-      text-transform: uppercase;
-    }
-
-    &:after {
-      top: 100%;
-      left: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      border-top-color: #f4f5f7;
-      border-width: 10px;
-      margin-left: -10px;
-    }
-  }
-
   &-item {
     border-left: 1px solid #f4f5f7;
     position: relative;

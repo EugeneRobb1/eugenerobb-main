@@ -1,8 +1,8 @@
-<section class="education">
-  <div class="education-top">
-    <div class="container text-center">
-      <fa-icon class="icon" [icon]="faGraduationCap"></fa-icon>
-      <h2>Education</h2>
+<section>
+  <div class="divider">
+    <div class="wow fadeInRight container text-center">
+      <fa-icon [icon]="faGraduationCap"></fa-icon>
+      <h2 class="divider-heading">Education</h2>
     </div>
   </div>
   <div class="container">
@@ -21,7 +21,7 @@
                 <h5 class="card-title"> {{ education.program }} </h5>
               </ng-template>
 
-              <h6 class="card-subtitle"> <a href="{{education.website}}" target="_blank">{{ education.name }}</a> </h6>
+              <h6 class="card-subtitle"> <a href="{{education.website}}" target="_blank" rel="noopener noreferrer">{{ education.name }}</a> </h6>
               <p class="card-text text-muted">{{ education.yearStart }} - {{ education.yearEnd }}</p>
               <p class="card-text">
                 {{ education.desc }}
