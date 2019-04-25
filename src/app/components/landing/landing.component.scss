@@ -1,0 +1,22 @@
+.landing{
+    background-image: url("../../../assets/imgs/code-bg.png");
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &-content {
+        text-align: center;
+        position: relative;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        background-color: transparent;
+        color: white;
+        .landing-photo {
+          border-radius: 50%;
+          max-width: 10em;
+        }
+      }
+}

@@ -14,7 +14,8 @@ import { NgwWowModule } from 'ngx-wow';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EducationdataService } from './services/educationdata.service';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { MySkillsComponent } from './components/my-skills/my-skills.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ComingsoonComponent,
     EducationComponent,
     SkillsComponent,
-    ContactComponent,
+    LandingComponent,
+    MySkillsComponent,
   ],
   imports: [
     BrowserModule,
