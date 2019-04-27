@@ -16,6 +16,7 @@ import { EducationdataService } from './services/educationdata.service';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { MySkillsComponent } from './components/my-skills/my-skills.component';
+import { MyGithubComponent } from './components/my-github/my-github.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { MySkillsComponent } from './components/my-skills/my-skills.component';
     SkillsComponent,
     LandingComponent,
     MySkillsComponent,
+    MyGithubComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,4 +13,11 @@ export class UserdataService {
     let githubUrl = 'https://api.github.com/users/eugene-robb'
     return this.http.get<User>(githubUrl);
   }
+
+
+  // Get repos 
+  getRepos(): Observable<any[]> {
+    let githubAPI = 'https://api.github.com/users/eugene-robb/repos';
+    return this.http.get<any[]>(githubAPI);
+  }
 }
