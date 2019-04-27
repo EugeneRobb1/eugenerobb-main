@@ -24,8 +24,13 @@ body {
         margin: 0 auto;
         width: 50px;
         padding-top: 8px;
-        border-bottom: 4px solid black;
+        border-bottom: 4px solid #F2A541;
       }
+    }
+
+    &-subtitle {
+      font-weight: 300;
+      color: #78909C;
     }
 
     fa-icon {
