@@ -1,8 +1,7 @@
 .github {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2em;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
 
   &-project {
     padding: 60px 40px;

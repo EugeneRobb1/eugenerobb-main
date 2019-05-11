@@ -13,20 +13,23 @@
             <div class="menu pb-4 col-sm-5">
                 <h5>Navigation</h5>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a [routerLink]="['/']" fragment="about">About</a></li>
+                    <li><a [routerLink]="['/']" fragment="education">Education</a></li>
+                    <li><a [routerLink]="['/']" fragment="skills">Skills</a></li>
+                    <li><a [routerLink]="['/']" fragment="github">GitHub</a></li>
                 </ul>
             </div>
             <div class="social pb-4 col-sm-5">
                 <h5>Social</h5>
                 <ul>
-                    <li><a href="" data-toggle="tooltip" title="Follow progress on GitHub profile">GitHub</a></li>
-                    <li><a href="" data-toggle="tooltip" title="Check out my pens">CodePen</a></li>
-                    <li><a href="" data-toggle="tooltip" title="Reach out to me on LinkedIn">LinkedIn</a></li>
-                    <li><a href="" data-toggle="tooltip" title="Follow me on Twitter">Twitter</a></li>
+                    <li><a href="http://github.com/eugene-robb" target="_blank" rel="noopener noreferrer"
+                            data-toggle="tooltip" title="Follow progress on GitHub profile">GitHub</a>
+                    <li><a href="https://codepen.io/eugene-robb/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip"
+                            title="Check out my pens">CodePen</a></li>
+                    <li><a href="https://www.linkedin.com/in/eugene-robb-731b52142/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip"
+                            title="Reach out to me on LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/eugene_robb" target="_blank" rel="noopener noreferrer" data-toggle="tooltip"
+                            title="Follow me on Twitter">Twitter</a></li>
                     <li><a href="mailto:hey@eugenerobb.ie" data-toggle="tooltip" title="Send me an email">Email</a></li>
                 </ul>
             </div>

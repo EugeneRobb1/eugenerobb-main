@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 
   ::selection{
     background: #F2A541;
@@ -29,7 +30,7 @@ body {
     }
 
     &-subtitle {
-      font-weight: 300;
+      font-weight: 350;
       color: #78909C;
     }
 
